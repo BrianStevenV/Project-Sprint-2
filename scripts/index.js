@@ -1,5 +1,5 @@
-import { videoPlay } from "../scripts/dataplay.js";
-import { videos } from "../scripts/data.js";
+import { videoPlay } from "/scripts/dataplay.js";
+import { videos } from "/scripts/data.js";
 
 
 let boxPlay = sessionStorage.getItem("boxPlay") ? JSON.parse(sessionStorage.getItem("boxPlay")) : [];
@@ -62,7 +62,7 @@ containerPrint.addEventListener('click', event => {
         boxPlay.push(valuesInfo);
         sessionStorage.setItem("boxPlay", JSON.stringify(videoPlay));
 
-        window.location = "../pages/iframe.html";  
+        window.location = "/pages/iframe.html";  
         
         sessionStorage.setItem("boxPlay", JSON.stringify(videoPlay));
         boxPlay = JSON.parse(sessionStorage.getItem("boxPlay"));

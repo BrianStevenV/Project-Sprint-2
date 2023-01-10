@@ -1,5 +1,5 @@
 
-import { videos } from "../scripts/data.js";
+import { videos } from "/scripts/data.js";
 
 const form = document.getElementById('form');
 console.log(form);
