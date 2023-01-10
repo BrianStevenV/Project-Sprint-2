@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar video</title>
+    <link rel="stylesheet" href="../styles/add.css" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Página para agregar video</h1>
+    </header>
+    <main class="main">
+        <form id="form">
+            <label for="thumbnail">Introduzca la miniatura del video</label>
+            <input id="thumbnail" type="url" placeholder="URL de Miniatura">
+            <label for="title">Titulo del video</label>
+            <input id="title" type="text" placeholder="Escriba aqui el titulo del video">
+            <label for="chanel">Canal</label>
+            <input id="chanel" type="text" placeholder="Escriba aqui el nombre del canal">
+            <label for="views">Vistas</label>
+            <input id="views" type="text" placeholder="Escriba el numero de vistas y la fecha de publicacion del video">
+            <label for="tipo">Introduzca la Categoria de video</label>
+            <input id="tipo" type="text">
+            <label for="video">Introduzca la URL del video</label>
+            <input id="video" type="url">
+            <button type="submit">Agregar</button>
+        </form>
+        <a href="../index.html" id="back">Volver atrás</a>
+    </main>
+    <script src="../scripts/add.js" type="module"></script>
+</body>
+</html>

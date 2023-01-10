@@ -1,0 +1,226 @@
+body{
+    background: #181818;
+    margin: 1rem 2rem;
+}
+
+
+/*Cabecera*/
+.header{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+
+}
+
+.logo-left:hover{
+    cursor: pointer;
+}
+
+.name-left:hover{
+    cursor: pointer;
+}
+
+
+.search-form{
+    display: flex;
+    height: 45px;
+    position: relative;
+}
+
+#searchInput{
+    width: 600px;
+    height: 25px;
+    border-radius: 10px;
+    margin-left: 5rem;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 7px 9px;
+    font-family: 'Arial';
+    font-size: 1rem;
+    outline: none;
+}
+
+
+
+#searchButton{
+    background-color: #535353;
+    margin-left: -6px;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+.iconButton{
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    width: 25px;
+    padding: 3px 20px;
+}
+
+/*Botones de Filtros*/
+
+
+.main__filters{
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    /* justify-content: space-between; */
+}
+
+
+#btnAll{
+    background-color: #535353;
+    color: white;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-family: 'Arial';
+    padding: 8px 10px;
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+#btnAll:hover{
+    background-color: white;
+    color: #181818;
+}
+
+
+
+#btnMusic{
+    background-color: #535353;
+    color: white;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-family: 'Arial';
+    padding: 8px 10px;
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+#btnMusic:hover{
+    background-color: white;
+    color: #181818;
+}
+
+
+
+#btnProgramming{
+    background-color: #535353;
+    color: white;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-family: 'Arial';
+    padding: 8px 10px;
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+#btnProgramming:hover{
+    background-color: white;
+    color: #181818;
+}
+
+
+
+#btnDesign{
+    background-color: #535353;
+    color: white;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-family: 'Arial';
+    padding: 8px 10px;
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+#btnDesign:hover{
+    background-color: white;
+    color: #181818;
+}
+
+
+/* Main */
+
+.main{
+    margin-top: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+
+#containerCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 18px;
+    padding: 20px 25px;
+    height: 100%;
+}
+
+
+.main__card{
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.card__image{
+    margin-left: 25px;  
+    margin-bottom: 75px; 
+    margin-right: 5px;
+    object-fit: cover;
+}
+
+
+.card__image:hover{
+    cursor: pointer;
+}
+
+
+.thumbnail__video{
+    width: 100%;
+}
+
+
+.title__video{
+    color: white;
+    font-family: 'Arial';
+    max-width: 100%;
+}
+
+
+.description__video{
+    color:#808385;
+    font-family: 'Arial';
+    margin-bottom: -17px;
+}
+
+/* Footer */
+
+.footer{
+    position: relative;
+    text-align: center;
+}
+
+#add{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    color: white;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Arial';
+}
+
+@media screen and (max-width:560px){
+    #containerCards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
